@@ -28,6 +28,14 @@ git checkout -b <branch> //Erzeugt einen neuen lokalen Branch
 git push --set-upstream <repo> <branch> //Erzeugt den neuen Branch in der GitHub Repo und pusht
 
 
+git fetch //lädt eventuelle Änderungen von der Repo herunter; --all führt den Befehl für alle lokalen Branches durchD
+
+git reset <repo>/<branch> //Zeigt, ob es Änderungen gibt und fügt NEUE Dateien hinzu
+
+git reset --hard <repo>/<branch> //Setzt den lokalen Branch auf das Niveau der Repo. ÜBERSCHREIBT ALLE DATEN! Evtl vorher einen neuen lokalen Branch als Backup erstellen
+
+
+
 git remote -v //Zeigt derzeitige Kürzel für remote Repos (aka. GitHub) an, nur um zu checken, ob alles richtig konfiguriert ist, wenn es zu problemen kommt
 
 git log //Zeigt alle Commits auf aktuellem 
@@ -35,3 +43,15 @@ git log //Zeigt alle Commits auf aktuellem
 git branch //Zeigt die lokalen Branches an
 
 git checkout //Wechselt lokalen Branch
+
+git rm <Datei.endung> //Entfernt die Datei
+
+git rm --cached <Datei.endung> //Entfernt die Datei in der Repo, belässt die lokale Kopie
+
+
+
+#Best Practices
+
+1. Für jedes neue Feature einen separaten Branch erstellen, gemerged wird später
+
+2. Bei Commit-Konflikten einen neuen Branch erstellen
