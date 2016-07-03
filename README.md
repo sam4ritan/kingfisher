@@ -11,7 +11,7 @@ git clone https://github.com/sam4ritan/kingfisher.git //Erzeugt einen lokalen Or
 
 git add . //Fügt alle Änderungen dem aktuellen Commit hinzu
 
-git add <Datei1.endung> <Datei2.endung> //Wenn nur bestimmte Dateien commited werden sollen
+git add DATEI1.endung DATEI2.endung //Wenn nur bestimmte Dateien commited werden sollen
 
 //git add ist auch nötig, um neue Dateien der Repo hinzuzufügen
 
@@ -20,19 +20,19 @@ git commit -m "Commit Kommentar (Flag)" //Der eigentliche Commit, ohne diesen wi
 
 git commit -a -m "Commit Kommentar (Flag)" //Fasst die beiden Schritte (add und commit) zusammen
 
-git push <repo> <branch> //Fügt die Commits der GitHub Repo hinzu; <repo> ist normalerweise 'origin'; <branch> kann benannt werden, sonnst wird nach einem Branch mit gleichem Namen wie lokal gesucht, sonst kommt es zur Fehlermeldung
+git push REPO BRANCH //Fügt die Commits der GitHub Repo hinzu; REPO ist normalerweise 'origin'; BRANCH kann benannt werden, sonnst wird nach einem Branch mit gleichem Namen wie lokal gesucht, sonst kommt es zur Fehlermeldung
 
 
-git checkout -b <branch> //Erzeugt einen neuen lokalen Branch
+git checkout -b BRANCH //Erzeugt einen neuen lokalen Branch
 
-git push --set-upstream <repo> <branch> //Erzeugt den neuen Branch in der GitHub Repo und pusht
+git push --set-upstream REPO BRANCH //Erzeugt den neuen Branch in der GitHub Repo und pusht
 
 
 git fetch //lädt eventuelle Änderungen von der Repo herunter; --all führt den Befehl für alle lokalen Branches durchD
 
-git reset <repo>/<branch> //Zeigt, ob es Änderungen gibt und fügt NEUE Dateien hinzu
+git reset REPO/BRANCH //Zeigt, ob es Änderungen gibt und fügt NEUE Dateien hinzu
 
-git reset --hard <repo>/<branch> //Setzt den lokalen Branch auf das Niveau der Repo. ÜBERSCHREIBT ALLE DATEN! Evtl vorher einen neuen lokalen Branch als Backup erstellen
+git reset --hard REPO/BRANCH //Setzt den lokalen Branch auf das Niveau der Repo. ÜBERSCHREIBT ALLE DATEN! Evtl vorher einen neuen lokalen Branch als Backup erstellen
 
 
 
@@ -44,10 +44,14 @@ git branch //Zeigt die lokalen Branches an
 
 git checkout //Wechselt lokalen Branch
 
-git rm <Datei.endung> //Entfernt die Datei
+git rm DATEI1.endung //Entfernt die Datei
 
-git rm --cached <Datei.endung> //Entfernt die Datei in der Repo, belässt die lokale Kopie
+git rm --cached DATEI1.endung//Entfernt die Datei in der Repo, belässt die lokale Kopie
 
+
+git push origin --delete BRANCH //Entfernt einen Branch im GitHub
+
+git branch -D BRANCH //Entfernt einen Branch lokal
 
 
 #Best Practices
