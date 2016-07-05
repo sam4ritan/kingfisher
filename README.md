@@ -54,6 +54,8 @@ git push origin --delete BRANCH //Entfernt einen Branch im GitHub
 git branch -D BRANCH //Entfernt einen Branch lokal
 
 
+git pull //um nach commits zu aktualisieren, wenn die konsole es anbietet
+
 #Best Practices
 
 1. Für jedes neue Feature einen separaten Branch erstellen, gemerged wird später
