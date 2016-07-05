@@ -56,6 +56,11 @@ git branch -D BRANCH //Entfernt einen Branch lokal
 
 git pull //um nach commits zu aktualisieren, wenn die konsole es anbietet
 
+
+git checkout BRANCH1       //
+git checkout BRANCH2 DATEI //Kopiert die Datei von Branch2 auf Branch1. Muss noch commited werden
+
+
 #Best Practices
 
 1. Für jedes neue Feature einen separaten Branch erstellen, gemerged wird später
