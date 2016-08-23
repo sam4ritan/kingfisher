@@ -1,2 +1,3 @@
 Ip Scan Grundlagen: http://stackoverflow.com/questions/5462805/small-ip-scanner-code-in-java
-http://www.java-tutorial.org/
+Swing: http://www.java-tutorial.org/
+Quit Action: http://stackoverflow.com/questions/8707392/java-exit-button-from-a-menuitem-menubar-and-sound-player
