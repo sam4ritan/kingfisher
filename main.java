@@ -7,7 +7,7 @@ public class main
   	JFrame mainWindow = new JFrame("project kingfisher");
 	mainWindow.setSize(200,200);
 	mainWindow.setVisible(true);
-	mainWindow.add(new JLabel("Hier könnte IHRE Werbung stehen");
+	mainWindow.add(new JLabel("Hier könnte IHRE Werbung stehen"));
 	};
 };
 
