@@ -1,6 +1,12 @@
 import javax.swing.*;
 import java.net.*;
 
-public static void main (String args[]){
-  
-}
+public class main
+{
+	public static void main (String args[]){
+  	JFrame mainWindow = new JFrame("project kingfisher");
+	mainWindow.setSize(200,200);
+	mainWindow.setVisible(true);
+	};
+};
+
