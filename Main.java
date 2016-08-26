@@ -5,6 +5,7 @@ import java.awt.event.*;
 public class Main
 {
 
+
     public static JDialog aboutWindow;
     public static JFrame controlPanel;
     public static JFrame contactChooser;
@@ -152,6 +153,7 @@ public class Main
 	
 	    public static void controlPanel() {
         Main.controlPanel = new JFrame();
+        Main.controlPanel.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Main.controlPanel.setTitle("Control Panel");
         Main.controlPanel.setSize(300,200);
         Main.controlPanel.add(new JLabel("The angels have the blue box"));
