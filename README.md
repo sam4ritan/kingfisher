@@ -4,3 +4,5 @@ Kingfisher ist eine portable Peer-to-Peer Anwendung zur Kommunikation in unkonfi
 liegt dabei auf einem Plug-and-Play Prinzip.
 Die fertige Anwendung findet von alleine andere verbundene Clients, und ist unter verschiedenen Systemen lauffähig. Es 
 ist keine Installation nötig, die Anwendung wird von einem Wechseldatenträger aus ausgeführt.
+
+Eclipse Branch: Dieser Branch wurde neu erstellt, da Änderungen mit der Eclipse IDE gemacht wurden
