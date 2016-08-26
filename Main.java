@@ -7,7 +7,51 @@ public class Main
 
     public static JDialog aboutWindow;
     public static JFrame controlPanel;
+    public static JFrame contactChooser;
+    public static JFrame chatWindow;
+    public static JFrame settingsWindow;
+    public static JFileChooser fileChooser;
      
+    
+    public static void fileTransfer() {
+        Main.fileChooser = new JFileChooser();
+    }
+    
+    public static void chat() {
+        Main.chatWindow = new JFrame();
+        Main.chatWindow.setTitle("Chat");
+        Main.chatWindow.setSize(600,500);
+        Main.chatWindow.add(new JLabel("Insert friends here!"));
+            JMenuBar menubar = new JMenuBar();
+                JMenu control = new JMenu("Control");
+                    JMenuItem filetransfer = new JMenuItem("File Transfer");
+                        filetransfer.addActionListener(new ActionListener() {
+                            public void actionPerformed(ActionEvent event) {
+                                Main.fileChooser.showDialog(null, "Send");
+                                }
+                            }
+                        );
+                    control.add(filetransfer);
+                    JMenuItem quit = new JMenuItem("Quit");
+                        quit.addActionListener(new ActionListener() {
+                            public void actionPerformed(ActionEvent event) {
+                                Main.chatWindow.setVisible(false);
+                                }
+                            }
+                        );
+                    control.add(quit);  
+                menubar.add(control);
+            Main.chatWindow.setJMenuBar(menubar);
+        Main.chatWindow.setVisible(false);
+
+    }
+    
+    
+    
+    
+    
+    
+    
 	public static void about () {
         Main.aboutWindow = new JDialog();
         Main.aboutWindow.setTitle("About kingfisher a0.0.3");
@@ -49,11 +93,19 @@ public class Main
             JMenuBar menubar = new JMenuBar();
             //defining menu groups
                 JMenu windows = new JMenu("Windows");
-                    JCheckBoxMenuItem chat = new JCheckBoxMenuItem("Chat");
-                    JCheckBoxMenuItem filetransfer = new JCheckBoxMenuItem("Filetransfer");
-                    JCheckBoxMenuItem settings = new JCheckBoxMenuItem("Settings");
+                    JMenuItem chat = new JMenuItem("Chat");
+                        chat.addActionListener(new ActionListener() {
+                                public void actionPerformed(ActionEvent event) {
+                                    Main.chatWindow.setVisible(true);
+                                    }
+                                }
+                            );
+                    JMenuItem contacts = new JMenuItem("Contacts");
+                    //JCheckBoxMenuItem filetransfer = new JCheckBoxMenuItem("Filetransfer");
+                    JMenuItem settings = new JMenuItem("Settings");
                     windows.add(chat);
-                    windows.add(filetransfer);
+                    windows.add(contacts);
+                    //windows.add(filetransfer);
                     windows.add(settings);
                 JMenu control = new JMenu("Control");
                     JMenuItem quit = new JMenuItem("Quit");
@@ -85,6 +137,10 @@ public class Main
 	
 	
 	public static void main (String args[]){
+	//initializing fileChooser
+	fileTransfer();
+	//initializing chat
+	chat();
 	//initializing about
 	about();
 	//initializing control panel
