@@ -1,8 +1,6 @@
 #!/bin/bash
 
-#'path' soll den derzeitigen Pfad auslesen und zur Verarbeitung ermöglichen, ausfälle durch Blanks sind einbezogen
-
-#pathlin="$PWD"
+#'cwd' soll den derzeitigen Pfad auslesen und zur Verarbeitung ermöglichen, ausfälle durch Blanks sind einbezogen
 
 cwd="$( cd "$( directoryname "${BASH_SOURCE[0]}" )" && pwd )"
 
