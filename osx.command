@@ -4,4 +4,4 @@
 
 cwd="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-java -jar "$cwd/jar/kingfisher_a0_0_3.jar" #Startet Programm, Java wird vorausgesetzt
+java -jar "$cwd/jar/kingfisher_a0_0_4.jar" #Startet Programm, Java wird vorausgesetzt
