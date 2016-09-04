@@ -1,5 +1,10 @@
 package kingfisher;
 
+// <a href="http://www.freepik.com/free-vector/cute-birds-collection_832716.htm">Designed by Freepik</a>
+// Kingfisher Icon credited to above source
+// edited by sam4ritan
+
+
 import javax.swing.*;
 import java.net.*;
 import java.awt.event.*;
@@ -118,8 +123,8 @@ public class Main {
     
 	public static void about () {
         Main.aboutWindow = new JDialog();
-        Main.aboutWindow.setTitle("About kingfisher a0.0.3");
-        Main.aboutWindow.setSize(250,400);
+        Main.aboutWindow.setTitle("About kingfisher a0.0.4");
+        Main.aboutWindow.setSize(350,400);
         Main.aboutWindow.setModal(true);
             JMenuBar menubar = new JMenuBar();
                 JMenu control = new JMenu("Control");
@@ -133,7 +138,7 @@ public class Main {
                     control.add(close);
                 menubar.add(control);
             Main.aboutWindow.setJMenuBar(menubar);
-        JLabel name = new JLabel("kingfisher");
+        JLabel name = new JLabel("Icon designed by Freepik.com");
         /*Label slogan = new JLabel("'So the angels do not keep the blue box'");
         JLabel version = new JLabel("Version a0.0.3 ALPHA");
         JLabel by = new JLabel("by");
@@ -153,8 +158,12 @@ public class Main {
         Main.controlPanel = new JFrame();
         Main.controlPanel.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Main.controlPanel.setTitle("Control Panel");
-        Main.controlPanel.setSize(300,200);
-        Main.controlPanel.add(new JLabel("The angels have the blue box"));
+        Main.controlPanel.setSize(280,255);
+        	URL url = Main.class.getResource("/Images/rsz_1rsz_icon.png");
+        	ImageIcon iconLogo = new ImageIcon(url);
+        	//JLabel iconImage = new JLabel();
+        	//iconImage.setIcon(iconLogo);
+        Main.controlPanel.add(new JLabel(iconLogo));
             JMenuBar menubar = new JMenuBar();
             //defining menu groups
                 JMenu control = new JMenu("Control");
