@@ -8,8 +8,8 @@ ist keine Installation nötig, die Anwendung wird von einem Wechseldatenträger 
 
 Zum Starten klicken Sie nur auf die Launcherdatei für Ihr Betriebssystem:
 
-Windows: windows.bat
+*Windows: windows.bat*
 
-Linux-basiert: linux.sh
+*Linux-basiert: linux.sh*
 
-MacOSX: osx.sh
+*MacOSX: osx.sh*
