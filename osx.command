@@ -4,6 +4,6 @@
 
 #pathlin="$PWD"
 
-cwd=$(pwd)
+cwd="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 java -jar "$cwd/jar/kingfisher_a0_0_3.jar" #Startet Programm, Java wird vorausgesetzt
