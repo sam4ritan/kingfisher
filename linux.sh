@@ -2,6 +2,6 @@
 
 #'path' soll den derzeitigen Pfad auslesen und zur Verarbeitung ermöglichen, ausfälle durch Blanks sind einbezogen
 
-path="$PWD"
+#pathlin="$PWD"
 
-java -jar "$path"/jar/kingfisher.jar #Startet Programm, Java wird vorausgesetzt
+java -jar $pwd/jar/kingfisher.jar #Startet Programm, Java wird vorausgesetzt
