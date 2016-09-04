@@ -1,10 +1,10 @@
+package kingfisher;
+
 import javax.swing.*;
 import java.net.*;
 import java.awt.event.*;
 
-public class Main
-{
-
+public class Main {
 
     public static JDialog aboutWindow;
     public static JFrame controlPanel;
@@ -13,9 +13,7 @@ public class Main
     public static JFrame settingsWindow;
     public static JDialog helpWindow;
     public static JFileChooser fileChooser;
-    
-    
-    
+	
     public static void settings() {
         Main.settingsWindow = new JFrame();
         Main.settingsWindow.setTitle("Settings");
@@ -237,5 +235,4 @@ public class Main
 	//initializing control panel
 	controlPanel();
 	};
-};
-
+}
