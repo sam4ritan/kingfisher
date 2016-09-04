@@ -4,4 +4,4 @@
 
 #pathlin="$PWD"
 
-java -jar $pwd/jar/kingfisher.jar #Startet Programm, Java wird vorausgesetzt
+java -jar $pwd/jar/kingfisher_a0_0_3.jar #Startet Programm, Java wird vorausgesetzt
